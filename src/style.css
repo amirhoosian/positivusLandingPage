@@ -383,7 +383,6 @@
   margin-bottom: 10px;
 }
 
-/* Contact Section */
 .contact-section {
   border-top: 1px solid #ddd;
   padding-top: 20px;
@@ -399,7 +398,6 @@
   margin-bottom: 8px;
 }
 
-/* Email Subscription */
 .subscribe-box {
   display: flex;
   gap: 10px;
@@ -420,7 +418,6 @@
   cursor: pointer;
 }
 
-/* Bottom Section */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -445,7 +442,6 @@
 }
 
 @media (max-width: 768px) {
-  /* Navigation */
   .navBar {
     padding: 20px 15px;
   }
@@ -455,60 +451,43 @@
   }
 
   .nav-items {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    height: 100vh;
-    background: #fff;
-    flex-direction: column;
-    padding: 80px 30px;
-    transition: 0.3s;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    display: none;
   }
 
-  .nav-items.active {
-    left: 0;
-  }
-
-  .hamburger {
-    display: flex;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-
-  /* Header */
   .header-main {
     flex-direction: column;
     padding: 20px;
     margin-top: 40px;
   }
-
-  .header-main-left h1,
-  .header-main-left p,
-  .header-main-left button {
-    width: 100% !important;
+  .header-main-left {
+    margin: 0 auto;
   }
-
   .header-main-left h1 {
+    width: 400px;
     font-size: 2rem;
   }
-
-  .header-main-left button {
-    padding: 15px !important;
+  .header-main-left p {
+    width: 400px;
+    font-size: 1.2rem;
+  }
+  .header-main-rigth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .header-main-rigth img {
+    width: 100%;
+    object-fit: fill;
   }
 
-  /* Company Logos */
   .company-logo {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     padding: 10px !important;
   }
 
-  /* Cards */
   .card_contanier,
   .card_box {
     flex-direction: column;
@@ -516,15 +495,16 @@
     gap: 15px;
   }
 
-  /* CTA Banner */
   .cta-banner {
     flex-direction: column;
     width: 90% !important;
-    height: auto;
-    padding: 30px !important;
   }
 
-  /* Contact Form */
+  .cta-message h2 {
+    width: 400px;
+    font-size: 2rem;
+  }
+
   .from_container {
     flex-direction: column;
     width: 90% !important;
@@ -534,7 +514,6 @@
     display: none;
   }
 
-  /* Footer */
   .positivus-footer {
     width: 90% !important;
     padding: 20px !important;
@@ -542,7 +521,6 @@
     text-align: center;
   }
 
-  /* General Adjustments */
   .services-intro,
   .card_contanier,
   .cta-banner {
@@ -550,13 +528,69 @@
     padding: 0 15px !important;
   }
 
+  .card_contanier {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card_contanier img {
+    width: 100%;
+  }
   .BoomBlueprint {
-    width: 95% !important;
+    width: 100% !important;
+    flex-direction: column;
     padding: 20px !important;
+  }
+
+  .cta-banner img {
+    display: none;
+  }
+  .cta-message {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-stories {
+    width: 100%;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .success-card {
+    width: 100%;
+  }
+
+  .BoomBlueprint_card {
+    width: 100%;
+  }
+  .btn_show_more_card {
+    padding: 0;
+  }
+  .btn_show_more_card button {
+    width: 100%;
+  }
+  .from_container {
+    width: 100%;
+  }
+  .from_container img {
+    display: none;
+  }
+  .form_input {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cool-form {
+    width: 100%;
+  }
+  .form-group {
+    width: 400px;
+  }
+  .cool-form button {
+    width: 400px;
   }
 }
 
-/* ============ Utilities ============ */
 .br {
   display: none;
 }
