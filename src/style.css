@@ -443,3 +443,126 @@
   gap: 40px;
   padding: 0 200px;
 }
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .navBar {
+    padding: 20px 15px;
+  }
+
+  .nav-item-container {
+    width: 100%;
+  }
+
+  .nav-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 80px 30px;
+    transition: 0.3s;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-items.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  /* Header */
+  .header-main {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .header-main-left h1,
+  .header-main-left p,
+  .header-main-left button {
+    width: 100% !important;
+  }
+
+  .header-main-left h1 {
+    font-size: 2rem;
+  }
+
+  .header-main-left button {
+    padding: 15px !important;
+  }
+
+  /* Company Logos */
+  .company-logo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px !important;
+  }
+
+  /* Cards */
+  .card_contanier,
+  .card_box {
+    flex-direction: column;
+    margin: 0 10px !important;
+    gap: 15px;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    flex-direction: column;
+    width: 90% !important;
+    height: auto;
+    padding: 30px !important;
+  }
+
+  /* Contact Form */
+  .from_container {
+    flex-direction: column;
+    width: 90% !important;
+  }
+
+  .from_container img {
+    display: none;
+  }
+
+  /* Footer */
+  .positivus-footer {
+    width: 90% !important;
+    padding: 20px !important;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* General Adjustments */
+  .services-intro,
+  .card_contanier,
+  .cta-banner {
+    margin-top: 40px !important;
+    padding: 0 15px !important;
+  }
+
+  .BoomBlueprint {
+    width: 95% !important;
+    padding: 20px !important;
+  }
+}
+
+/* ============ Utilities ============ */
+.br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .br {
+    display: none;
+  }
+}
