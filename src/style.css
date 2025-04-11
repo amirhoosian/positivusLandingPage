@@ -190,7 +190,7 @@
 .BoomBlueprint_header {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .BoomBlueprint_header_p {
@@ -255,7 +255,7 @@
 .from_container {
   display: flex;
   width: 1240px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: 0 auto;
   margin-top: 30px;
 
@@ -270,12 +270,12 @@
 }
 
 .from_container img {
-  flex: 1;
-  max-width: 100%;
+  /* flex: 1; */
+  max-width: 500px;
   object-fit: cover;
 
   position: relative;
-  right: -200px;
+  right: -100px;
 }
 
 .cool-form {
