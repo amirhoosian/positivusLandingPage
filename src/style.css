@@ -97,16 +97,22 @@
 }
 
 .card_contanier {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin: 0 180px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin: 0 auto;
+  gap: 30px;
+  width: 100%;
+  max-width: 1440px;
+
   margin-top: 91px;
 }
-
+.card_contanier img {
+  width: 100%;
+}
 .cta-banner {
-  width: 1240px;
-  height: 347px;
+  width: clamp(320px, 80%, 1240px);
+  height: clamp(200px, 30vw, 347px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,8 +121,13 @@
   padding: 60px;
   margin-top: 165px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
-
+.cta-banner img {
+  position: relative;
+  right: -100px;
+}
 .cta-message {
   width: 500px;
   display: flex;
@@ -141,7 +152,7 @@
 
 .success-stories {
   display: flex;
-  width: 1234px;
+  width: clamp(360px, 80vw, 1234px);
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 70px;
@@ -177,7 +188,7 @@
   gap: 30px;
 }
 .BoomBlueprint {
-  width: 1234px;
+  width: clamp(320px, 80%, 1234px);
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -211,7 +222,7 @@
 }
 
 .divider_BoomBlueprint {
-  width: 1114px;
+  width: clamp(300px, 90%, 1114px);
   height: 1px;
   background-color: #000000;
 }
@@ -223,7 +234,7 @@
 .BoomBlueprint_card {
   border: 1px solid #000000;
   margin: 0 auto;
-  width: 1234px;
+  width: clamp(320px, 80%, 1234px);
   padding: 41px 60px;
   border-radius: 20px;
 }
@@ -254,14 +265,15 @@
 
 .from_container {
   display: flex;
-  width: 1240px;
-  /* justify-content: space-around; */
+  width: clamp(360px, 80vw, 1240px);
   margin: 0 auto;
   margin-top: 30px;
-
+  overflow: hidden;
   align-items: center;
   background-color: #f3f3f3;
   border-radius: 20px;
+  position: relative;
+  padding-right: 300px;
 }
 
 .form_input {
@@ -270,12 +282,12 @@
 }
 
 .from_container img {
-  /* flex: 1; */
   max-width: 500px;
   object-fit: cover;
-
-  position: relative;
-  right: -100px;
+  position: absolute;
+  right: -250px; /* بیرون‌زدگی از سمت راست */
+  top: 50%;
+  transform: translateY(-50%); /* وسط‌چین عمودی */
 }
 
 .cool-form {
@@ -488,7 +500,6 @@
     padding: 10px !important;
   }
 
-  .card_contanier,
   .card_box {
     flex-direction: column;
     margin: 0 10px !important;
@@ -530,10 +541,10 @@
 
   .card_contanier {
     width: 100%;
-    flex-direction: column;
   }
   .card_contanier img {
-    width: 100%;
+    width: clamp(300px, 50vw, 600px);
+    height: clamp(150px, 25vw, 315px);
   }
   .BoomBlueprint {
     width: 100% !important;
@@ -588,6 +599,13 @@
   }
   .cool-form button {
     width: 400px;
+  }
+
+  .card_contanier {
+    grid-template-columns: 1fr;
+  }
+  .card_contanier img {
+    width: 100%;
   }
 }
 
