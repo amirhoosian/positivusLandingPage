@@ -285,14 +285,15 @@
   max-width: 500px;
   object-fit: cover;
   position: absolute;
-  right: -250px; /* بیرون‌زدگی از سمت راست */
+  right: -250px;
   top: 50%;
-  transform: translateY(-50%); /* وسط‌چین عمودی */
+  transform: translateY(-50%);
 }
 
 .cool-form {
   width: 100%;
-  min-width: 600px;
+  min-width: var(--min-container-width);
+  max-width: 100%;
 }
 .toggle-group {
   display: flex;
@@ -422,7 +423,7 @@
   border: 1px solid #ddd;
 }
 
-.subscribe-box button {
+.subscribe-box footer-bottombutton {
   padding: 8px 20px;
   background: #000;
   color: white;
@@ -446,11 +447,9 @@
   text-decoration: none;
   color: #333;
   margin-left: 20px;
-
-  display: flex;
   margin-top: 152px;
+
   gap: 40px;
-  padding: 0 200px;
 }
 
 @media (max-width: 768px) {
@@ -516,18 +515,9 @@
     font-size: 2rem;
   }
 
-  .from_container {
-    flex-direction: column;
-    width: 90% !important;
-  }
-
-  .from_container img {
-    display: none;
-  }
-
   .positivus-footer {
-    width: 90% !important;
-    padding: 20px !important;
+    width: 90%;
+    padding: 20px;
     flex-direction: column;
     text-align: center;
   }
@@ -547,9 +537,9 @@
     height: clamp(150px, 25vw, 315px);
   }
   .BoomBlueprint {
-    width: 100% !important;
+    width: 100%;
     flex-direction: column;
-    padding: 20px !important;
+    padding: 20px;
   }
 
   .cta-banner img {
@@ -583,22 +573,24 @@
   }
   .from_container {
     width: 100%;
+    position: inherit;
+    padding: 0;
   }
   .from_container img {
     display: none;
   }
   .form_input {
     width: 100%;
-    margin: 0 auto;
   }
   .cool-form {
     width: 100%;
   }
   .form-group {
-    width: 400px;
+    width: 100%;
   }
   .cool-form button {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
   }
 
   .card_contanier {
