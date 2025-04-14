@@ -73,7 +73,7 @@
 
 .company-logo {
   display: flex;
-  padding: 10px 250px;
+  padding: 10px 100px;
   justify-content: space-between;
   margin-top: 70px;
 }
@@ -101,10 +101,10 @@
   grid-template-columns: repeat(2, 1fr);
 
   margin: 0 auto;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
   max-width: 1440px;
-
+  padding: 0 100px;
   margin-top: 91px;
 }
 .card_contanier img {
@@ -240,10 +240,10 @@
 }
 
 .card_box {
-  display: flex;
+  display: grid;
 
-  flex-wrap: wrap;
-  margin: 0 300px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 135px;
   margin-top: 80px;
   gap: 40px;
 }
@@ -251,8 +251,8 @@
 .btn_show_more_card {
   display: flex;
   flex-direction: row-reverse;
+  padding: 0 135px;
   margin-top: 60px;
-  padding: 0 387px;
 }
 
 .btn_show_more_card button {
@@ -371,22 +371,87 @@
 }
 
 .positivus-footer {
-  width: 1000px;
-  margin: 20px auto;
+  padding: 55px 60px 50px 60px;
+  margin: 20px 100px;
+  margin-bottom: 0;
   padding: 30px;
-  background: #f5f5f5;
+  border-radius: 45px 45px 0px 0px;
+  background: var(--Dark, #191a23);
 }
 
-/* Navigation Section */
-.nav-section {
+.divider {
+  width: 100%;
+  max-width: 1120px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 2rem auto;
+}
+
+.copy-right {
   display: flex;
-  gap: 60px;
+  color: #fff;
+  gap: 40px;
+}
+.copy-right p {
+  color: #fff;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.copy-right a {
+  color: #fff;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.icon-fotter {
+  display: flex;
+  gap: 11px;
+}
+
+.nav-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
   margin-bottom: 30px;
 }
 
 .nav-column h1 {
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+.icon-footer-1 {
+  width: 20px;
+  height: 20px;
+}
+.icon-footer-2 {
+  width: 139.89px;
+  height: 23.007px;
+  flex-shrink: 0;
+}
+
+.epicNavWrapper {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+.epicNavWrapper a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-column a {
@@ -396,47 +461,50 @@
   margin-bottom: 10px;
 }
 
+.icon-footer {
+  display: flex;
+  gap: 20px;
+}
+
 .contact-section {
   border-top: 1px solid #ddd;
   padding-top: 20px;
   margin-bottom: 25px;
 }
 
-.contact-section h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.contact-info p {
-  margin-bottom: 8px;
-}
-
-.subscribe-box {
+.Contact-container {
   display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.subscribe-box input {
-  padding: 8px 12px;
-  width: 250px;
-  border: 1px solid #ddd;
-}
-
-.subscribe-box footer-bottombutton {
-  padding: 8px 20px;
-  background: #000;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.footer-bottom {
-  display: flex;
+  color: #fff;
   justify-content: space-between;
-  margin-top: 25px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
+  margin: 0 60px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Subscribe-news-btn {
+  display: flex;
+  gap: 20px;
+  padding: 58px 40px;
+
+  background: #292a32;
+}
+
+.Subscribe-news-btn input {
+  padding: 22px 35px;
+  border-radius: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: #292a32;
+}
+
+.Subscribe-news-btn button {
+  padding: 20px 35px;
+  border-radius: 14px;
+  background: var(--Green, #b9ff66);
 }
 
 .social-counter {
@@ -598,6 +666,47 @@
   }
   .card_contanier img {
     width: 100%;
+  }
+
+  .positivus-footer {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .epicNavWrapper {
+    flex-direction: column;
+  }
+
+  .Contact-container {
+    flex-direction: column;
+  }
+
+  .card_box {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box img {
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .Subscribe-news-btn {
+    flex-direction: column;
+  }
+
+  .nav-section {
+    gap: 20px;
+  }
+
+  .Contact-container {
+    gap: 20px;
   }
 }
 
