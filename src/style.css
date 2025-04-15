@@ -5,18 +5,7 @@
 }
 
 .navBar {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 60px;
-  align-items: center;
-}
-
-.nav-item-container {
-  width: 811px;
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 .nav-items {
@@ -75,8 +64,10 @@
 .company-logo {
   display: flex;
   padding: 10px 100px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 70px;
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 .services-intro {
@@ -244,6 +235,7 @@
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   margin: 0 135px;
   margin-top: 80px;
   gap: 40px;
@@ -524,10 +516,12 @@
 @media (max-width: 768px) {
   .navBar {
     padding: 20px 15px;
+    display: flex;
+    justify-content: space-around;
   }
-
-  .nav-item-container {
-    width: 100%;
+  svg {
+    width: 30px;
+    height: 30px;
   }
 
   .nav-items {
@@ -565,7 +559,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 10px !important;
+    padding: 10px;
   }
 
   .card_box {
@@ -724,5 +718,44 @@
 @media (max-width: 938px) {
   #action-link {
     display: none;
+  }
+}
+
+@media (max-width: 1298px) {
+  .card_box {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .positivus-footer {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .epicNavWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Contact-container {
+    flex-direction: column;
+  }
+  .icon-footer {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 812px) {
+  .card_box {
+    gap: 10px;
   }
 }
