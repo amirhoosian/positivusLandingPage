@@ -27,7 +27,8 @@
 
 .header-main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 100px;
   margin-top: 70px;
 }
 .header-main-left {
@@ -63,9 +64,8 @@
 
 .company-logo {
   display: flex;
-  padding: 10px 100px;
   justify-content: center;
-  gap: 70px;
+  gap: 99px;
   margin-top: 70px;
   flex-wrap: wrap;
 }
