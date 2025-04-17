@@ -28,7 +28,7 @@
 .header-main {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 300px;
   margin-top: 70px;
 }
 .header-main-left {
@@ -75,7 +75,7 @@
 
   margin-top: 152px;
   gap: 40px;
-  padding: 0 200px;
+  padding: 0 345px;
   text-align: center;
 }
 
@@ -88,20 +88,6 @@
   font-size: 18px;
 }
 
-.card_contanier {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  margin: 0 auto;
-  gap: 40px;
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 100px;
-  margin-top: 91px;
-}
-.card_contanier img {
-  width: 100%;
-}
 .cta-banner {
   width: clamp(320px, 80%, 1240px);
   height: clamp(200px, 30vw, 347px);
@@ -114,12 +100,12 @@
   margin-top: 165px;
   border-radius: 20px;
   position: relative;
-  overflow: hidden;
 }
 .cta-banner img {
   position: relative;
-  right: -100px;
+  right: 5px;
 }
+
 .cta-message {
   width: 500px;
   display: flex;
@@ -165,8 +151,22 @@
   gap: 10px;
 }
 .success-card p {
+  color: #fff;
+  font-family: "Space Grotesk";
   font-size: 18px;
+  font-weight: 400;
 }
+
+.success-cta a {
+  text-decoration: none;
+  color: var(--Green, #b9ff66);
+  font-family: "Space Grotesk";
+  font-size: 20px;
+
+  font-weight: 400;
+  line-height: 28px;
+}
+
 .br {
   width: 1px;
   background-color: #f3f3f3;
@@ -233,8 +233,7 @@
 
 .card_box {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(auto, max-content));
   justify-content: center;
   margin: 0 135px;
   margin-top: 80px;
@@ -244,7 +243,7 @@
 .btn_show_more_card {
   display: flex;
   flex-direction: row-reverse;
-  padding: 0 135px;
+  padding: 0 330px;
   margin-top: 60px;
 }
 
@@ -364,8 +363,11 @@
 }
 
 .positivus-footer {
+  width: calc(70% - 4rem);
+  height: calc((100% - 4rem) * (1814 / 1214));
+
   padding: 55px 60px 50px 60px;
-  margin: 20px 100px;
+  margin: 140px auto;
   margin-bottom: 0;
   padding: 30px;
   border-radius: 45px 45px 0px 0px;
@@ -513,6 +515,87 @@
   gap: 40px;
 }
 
+.ad-bidding {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, max-content));
+  gap: 40px;
+  justify-content: center;
+  margin-top: 92px;
+}
+
+.ad-bidding-card {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--Dark, #191a23);
+  gap: 69px;
+  box-shadow: 0px 5px 0px 0px #191a23;
+}
+
+.ad-bidding-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h3-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.h3-head h3 {
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #b9ff66;
+}
+
+.icon-head-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-head-card p {
+  color: var(--Black, #000);
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+.icon-head-card img {
+  --size: 41px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.card-1-social {
+  background: var(--Grey, #f3f3f3);
+}
+
+.card-2-social {
+  background: var(--Green, #b9ff66);
+}
+
+.card-3-social {
+  background: var(--Dark, #191a23);
+}
+
+.card-3-social .icon-head-card p {
+  color: #fff;
+}
+
+.ad-bidding-card .img {
+  width: 14.58vw;
+  height: calc(14.58vw * 0.703);
+}
+
 @media (max-width: 768px) {
   .navBar {
     padding: 20px 15px;
@@ -586,19 +669,11 @@
   }
 
   .services-intro,
-  .card_contanier,
   .cta-banner {
     margin-top: 40px !important;
     padding: 0 15px !important;
   }
 
-  .card_contanier {
-    width: 100%;
-  }
-  .card_contanier img {
-    width: clamp(300px, 50vw, 600px);
-    height: clamp(150px, 25vw, 315px);
-  }
   .BoomBlueprint {
     width: 100%;
     flex-direction: column;
@@ -656,13 +731,6 @@
     width: 100%;
   }
 
-  .card_contanier {
-    grid-template-columns: 1fr;
-  }
-  .card_contanier img {
-    width: 100%;
-  }
-
   .positivus-footer {
     width: 100%;
     margin: 0;
@@ -702,6 +770,10 @@
 
   .Contact-container {
     gap: 20px;
+  }
+
+  .ad-bidding {
+    grid-template-columns: minmax(auto, max-content);
   }
 }
 
@@ -758,4 +830,18 @@
   .card_box {
     gap: 10px;
   }
+}
+
+@media (max-width: 1016px) {
+  .ad-bidding {
+    grid-template-columns: minmax(auto, max-content);
+  }
+  .services-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bg-white h3 {
+  background-color: #fff;
 }
