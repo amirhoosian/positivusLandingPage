@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Space Grotesk";
 }
 
 .navBar {
@@ -184,10 +185,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: #b9ff66;
   margin: 0 auto;
   padding: 40px 60px;
-  border-radius: 20px;
+  border-radius: 45px;
+  border: 1px solid #191A23;
+  background: var(--Green, #B9FF66);
+  box-shadow: 0px 5px 0px 0px #191A23;
 }
 
 .BoomBlueprint_header {
@@ -209,8 +212,8 @@
 }
 
 .BoomBlueprint_header button {
-  border-radius: 50%;
-  padding: 20px 26px;
+  border-radius: 100%;
+  padding: 20px;
 }
 
 .divider_BoomBlueprint {
@@ -224,11 +227,13 @@
 }
 
 .BoomBlueprint_card {
-  border: 1px solid #000000;
   margin: 0 auto;
   width: clamp(320px, 80%, 1234px);
   padding: 41px 60px;
-  border-radius: 20px;
+  border-radius: 45px;
+border: 1px solid #191A23;
+background: var(--Grey, #F3F3F3);
+box-shadow: 0px 5px 0px 0px #191A23;
 }
 
 .card_box {
@@ -363,7 +368,7 @@
 }
 
 .positivus-footer {
-  width: calc(70% - 4rem);
+  width: calc(85% - 4rem);
   height: calc((100% - 4rem) * (1814 / 1214));
 
   padding: 55px 60px 50px 60px;
@@ -445,7 +450,6 @@
   gap: 40px;
 }
 .epicNavWrapper a {
-  text-decoration: none;
   color: #fff;
 }
 
@@ -480,11 +484,27 @@
   gap: 20px;
 }
 
+.title-contact{
+  width: 100px;
+  background-color: #B9FF66;
+  color: #000;
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/* padding: 1px 15px; */
+border-radius: 10px;
+text-align: center;
+}
+
+
+
 .Subscribe-news-btn {
   display: flex;
   gap: 20px;
   padding: 58px 40px;
-
+border-radius: 14px;
   background: #292a32;
 }
 
@@ -500,6 +520,11 @@
   padding: 20px 35px;
   border-radius: 14px;
   background: var(--Green, #b9ff66);
+  color: var(--Black, #000);
+text-align: center;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px; /* 140% */
 }
 
 .social-counter {
@@ -596,11 +621,120 @@
   height: calc(14.58vw * 0.703);
 }
 
+.bubble-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1240 / 645;
+  padding: 84px 0px 68px 0px;
+  align-items: center;
+  border-radius: 45px;
+  margin: 80px auto;
+  background: var(--Dark, #191a23);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.bubble-card{
+  display: block;
+  width: 100%;
+align-items: center;
+
+}
+
+.bubble-card-rigth{
+
+  position: relative;
+  right: -250px;
+}
+
+
+
+.bubble-card h3{
+  color: var(--Green, #B9FF66);
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position: relative;
+left: 70px;
+}
+
+.bubble-card p{
+color: #ddd;
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position: relative;
+left: 70px;
+}
+
+
+.bubble {
+	height: 250px;
+	width: 100%;
+	min-width: 200px;
+	background: #000;
+  color: #fff;
+  border: 1px solid green;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-top: 50px;
+font-size: 20px;
+	text-align: start;
+  padding: 20px 30px;
+
+}
+
+.pointer {
+	height: 40px;
+	width: 40px;
+	background: #000;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -22px;
+	position: relative;
+	left: calc(0.5vw - 200px);
+  border: 1px solid green;
+  border-top: none;
+  border-left: none;
+ 
+}
+
+.blurred {
+	background: #000;
+	filter: blur(20px);
+	position: relative;
+	top: -315px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .navBar {
     padding: 20px 15px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   svg {
     width: 30px;
@@ -627,6 +761,11 @@
     width: 400px;
     font-size: 1.2rem;
   }
+.header-main-left button{
+  width: 100%;
+}
+
+
   .header-main-rigth {
     width: 100%;
     display: flex;
@@ -644,6 +783,15 @@
     gap: 20px;
     padding: 10px;
   }
+
+  .company-logo img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    flex-shrink: 0;
+  
+  }
+
 
   .card_box {
     flex-direction: column;
@@ -678,6 +826,7 @@
     width: 100%;
     flex-direction: column;
     padding: 20px;
+  
   }
 
   .cta-banner img {
@@ -695,6 +844,7 @@
     width: 100%;
     flex-direction: column;
     gap: 70px;
+   
   }
   .success-card {
     width: 100%;
