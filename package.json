@@ -13,5 +13,8 @@
     "eslint": "^9.24.0",
     "prettier": "^3.5.3",
     "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.6"
   }
 }

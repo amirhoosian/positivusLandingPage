@@ -636,19 +636,27 @@ line-height: 28px; /* 140% */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .bubble-card{
   display: block;
-  width: 100%;
+  width: 50%;
 align-items: center;
+position: absolute;
 
 }
 
 .bubble-card-rigth{
 
   position: relative;
-  right: -250px;
+  right: -1030px;
+}
+
+.bubble-card-center{
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
 
