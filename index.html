@@ -2,11 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/style.css" />
+   
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./src/style.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -305,45 +311,66 @@
     </main>
     <footer>
       <div class="bubble-container">
-        <div class="bubble-card">
-            <div class="bubble">"We have been working with Positivus for the past year and have seen a
-              significant increase in website traffic and leads as a result of their
-              efforts. The team is professional, responsive, and truly cares about
-              the success of our business. We highly recommend Positivus to any
-              company looking to grow their online presence."</div>
-            <div class="pointer"></div>
-          <h3>John Smith</h3>
-          <p>Marketing Director at XYZ Corp</p>
+        <div class="swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bubble-card">
+                <div class="bubble">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </div>
+                <div class="pointer"></div>
+                <div class="bubble-texts">
+                  <h3>John Smith</h3>
+                  <p>Marketing Director at XYZ Corp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bubble-card">
+                <div class="bubble">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </div>
+                <div class="pointer"></div>
+                <div class="bubble-texts">
+                  <h3>John Smith 2</h3>
+                  <p>Marketing Director at XYZ Corp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bubble-card">
+                <div class="bubble">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </div>
+                <div class="pointer"></div>
+                <div class="bubble-texts">
+                  <h3>John Smith 3</h3>
+                  <p>Marketing Director at XYZ Corp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-     
-
-        <div class="bubble-card bubble-card-center">
-          <div class="bubble">"We have been working with Positivus for the past year and have seen a
-            significant increase in website traffic and leads as a result of their
-            efforts. The team is professional, responsive, and truly cares about
-            the success of our business. We highly recommend Positivus to any
-            company looking to grow their online presence."</div>
-          <div class="pointer"></div>
-        <h3>John Smith</h3>
-        <p>Marketing Director at XYZ Corp</p>
       </div>
 
-
-      <div class="bubble-card  bubble-card-rigth">
-        <div class="bubble">"We have been working with Positivus for the past year and have seen a
-          significant increase in website traffic and leads as a result of their
-          efforts. The team is professional, responsive, and truly cares about
-          the success of our business. We highly recommend Positivus to any
-          company looking to grow their online presence."</div>
-        <div class="pointer"></div>
-      <h3>John Smith</h3>
-      <p>Marketing Director at XYZ Corp</p>
-    </div>
-
-
-
-      
-      </div>
       <div class="from_container">
         <div class="form_input">
           <form class="cool-form">
@@ -373,7 +400,7 @@
               <textarea id="message" rows="5" placeholder="Message"></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Send Message</button>
+            <button style="color: aliceblue;" type="submit" class="submit-btn">Send Message</button>
           </form>
         </div>
         <img src="/Illustration (2).png" alt="" />
@@ -423,5 +450,15 @@
         </div>
       </div>
     </footer>
+    <script type="module">
+      import Swiper from 'swiper';
+
+      const swiper = new Swiper('.swiper-container', {
+        spaceBetween: 50,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+      });
+    </script>
+
   </body>
 </html>

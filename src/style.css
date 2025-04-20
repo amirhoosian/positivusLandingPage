@@ -493,7 +493,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-/* padding: 1px 15px; */
+
 border-radius: 10px;
 text-align: center;
 }
@@ -524,7 +524,7 @@ border-radius: 14px;
 text-align: center;
 font-size: 20px;
 font-weight: 400;
-line-height: 28px; /* 140% */
+line-height: 28px; 
 }
 
 .social-counter {
@@ -592,7 +592,7 @@ line-height: 28px; /* 140% */
   font-family: "Space Grotesk";
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
 }
 .icon-head-card img {
   --size: 41px;
@@ -633,105 +633,92 @@ line-height: 28px; /* 140% */
   border-radius: 45px;
   margin: 80px auto;
   background: var(--Dark, #191a23);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  overflow: hidden;
   position: relative;
 }
 
-.bubble-card{
-  display: block;
-  width: 50%;
-align-items: center;
-position: absolute;
-
+.bubble-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bubble-card-rigth{
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 606px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.bubble-card h3 {
+  width: 70%;
+  color: var(--Green, #b9ff66);
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   position: relative;
-  right: -1030px;
+
 }
 
-.bubble-card-center{
+.bubble-card p {
+  width: 70%;
+  color: #ddd;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   position: relative;
-  left: 0;
-  right: 0;
+
 }
-
-
-
-.bubble-card h3{
-  color: var(--Green, #B9FF66);
-font-family: "Space Grotesk";
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-position: relative;
-left: 70px;
-}
-
-.bubble-card p{
-color: #ddd;
-font-family: "Space Grotesk";
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-position: relative;
-left: 70px;
-}
-
 
 .bubble {
-	height: 250px;
-	width: 100%;
-	min-width: 200px;
-	background: #000;
+  background: #191a23;
   color: #fff;
-  border: 1px solid green;
-	display: block;
-	margin: 0 auto;
-	border-radius: 20px;
-	margin-top: 50px;
-font-size: 20px;
-	text-align: start;
-  padding: 20px 30px;
-
+  border: 1px solid #b9ff66;
+  display: block;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: start;
+  padding: 48px 52px;
 }
 
 .pointer {
-	height: 40px;
-	width: 40px;
-	background: #000;
-	margin: 0 auto;
-	transform: rotate(45deg);
-	border-radius: 0 0 12px 0;
-	margin-top: -22px;
-	position: relative;
-	left: calc(0.5vw - 200px);
-  border: 1px solid green;
+  height: 40px;
+  width: 40px;
+  background: #191a23;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 20px;
+  left: calc(0.5vw - 200px);
+  border: 1px solid #b9ff66;
   border-top: none;
   border-left: none;
- 
 }
 
 .blurred {
-	background: #000;
-	filter: blur(20px);
-	position: relative;
-	top: -315px;
-	z-index: -1;
+  background: #000;
+  filter: blur(20px);
+  position: relative;
+  top: -315px;
+  z-index: -1;
 }
 
+.bubble-texts {
+  margin-top: 10px;
+  padding-left: 80px;
+  text-align: left;
+  width: 100%;
+}
 
-
-
-
-
-
-
+.bubble-texts h3 {
+  text-align: left;
+}
 
 
 
